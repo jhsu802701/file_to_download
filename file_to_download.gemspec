@@ -6,10 +6,10 @@ require 'file_to_download/version'
 Gem::Specification.new do |spec|
   spec.name          = "file_to_download"
   spec.version       = FileToDownload::VERSION
-  spec.authors       = ["TODO: Write your name"]
-  spec.email         = ["TODO: Write your email address"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.authors       = ["Jason Hsu"]
+  spec.email         = ["rubyist@jasonhsu.com"]
+  spec.summary       = %q{Gem for managing the process of downloading files}
+  spec.description   = %q{Gets the size and age of a file and whether to replace an existing file}
   spec.homepage      = ""
   spec.license       = "MIT"
 
