@@ -1,6 +1,14 @@
 # FileToDownload
 
-TODO: Write a gem description
+This Ruby Gem is used for the process of downloading a file and saving it on the local drive.
+
+This gem can obtain the age and size of a file.
+
+You can conditionally download a remote file and save a local copy.  The download parameters are:
+1.  URL of the remote file
+2.  Maximum number of download attempts
+3.  Maximum age of a file (in hours)
+4.  Maximum delay after attempting the download (in seconds)
 
 ## Installation
 
