@@ -1,5 +1,6 @@
 # FileToDownload
 
+## Purpose
 This Ruby Gem is used for the process of downloading a file and saving it on the local drive.
 
 This gem can obtain the age and size of a file.
@@ -10,11 +11,12 @@ You can conditionally download a remote file and save a local copy.  The downloa
 3. Maximum age of a file (in hours)
 4. Maximum delay after attempting the download (in seconds)
 
-## Commands for Testing
+## Commands for development
 1. git clone https://github.com/jhsu802701/file_to_download.git
 2. cd file_to_download
 3. gem install rspec
-4. rake 
+4. rake # runs tests
+5. rake install # installs this gem
 
 ## Installation
 
@@ -32,7 +34,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+ftd = Filetodownload.new("file_path") # Initialize path name of file
+ftd.size # Gets size of file in bytes
+ftd.age # Gets age of file in hours
+# Download web page and save it to the above file path
+# Give up after 4 failed attempts
+# Keep the existing file if it's no more than 1.0 hours old
+# Pause for up to 0.5 seconds after the download
+ftd.get("http://finance.yahoo.com/q/pr?s=BRK-B+Profile", 4, 1.0, 0.5)
 
 ## Contributing
 

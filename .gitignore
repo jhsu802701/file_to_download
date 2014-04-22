@@ -22,3 +22,4 @@ tmp
 mkmf.log
 
 spec/write/brkb.html
+.DS_Store
