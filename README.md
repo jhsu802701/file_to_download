@@ -30,13 +30,20 @@ Or install it yourself as:
 
 ## Usage
 
-ftd = Filetodownload.new("file_path") # Initialize path name of file
+ftd = Filetodownload.new("file_path") &#35; Initialize path name of file
+
 ftd.size &#35; Gets size of file in bytes
+
 ftd.age &#35; Gets age of file in hours
+
 &#35; Download web page and save it to the above file path
+
 &#35; Give up after 4 failed attempts
+
 &#35; Keep the existing file if it's no more than 1.0 hours old
+
 &#35; Pause for up to 0.5 seconds after the download
+
 ftd.get("http://finance.yahoo.com/q/pr?s=BRK-B+Profile", 4, 1.0, 0.5)
 
 ## Contributing
